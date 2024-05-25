@@ -1,10 +1,18 @@
 import Duck from "./animals/duck/Duck";
+import MallardDuck from "./animals/duck/MallardDuck";
+import RubberDuck from "./animals/duck/RubberDuck";
+
+const separator = "\n--------------------------------------------------\n";
 
 function execute() {
-  const duck = new Duck();
+  const ducks = [new MallardDuck(), new Duck(), new RubberDuck()];
 
-  duck.display().performFly().performQuack();
+  ducks.forEach((duck) => {
+    console.log(separator);
+
+    duck.display().performFly().performQuack();
+  });
 }
 
-console.clear();
 execute();
+console.log(separator);
