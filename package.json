@@ -1,0 +1,16 @@
+{
+  "name": "study-design-patterns",
+  "version": "0.0.1",
+  "author": "EduardoZF",
+  "license": "UNLICENSED",
+  "private": false,
+  "dependencies": {},
+  "scripts": {
+    "start": "npx ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
+  }
+}
